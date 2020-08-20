@@ -1,8 +1,10 @@
 # pull python image
 FROM python:3.8.3-alpine
 
+ENV HOME=/usr/src/app
+
 # set working dir
-WORKDIR /usr/src/app
+WORKDIR $HOME
 
 # set env variables
 ENV PYTHONDONTWRITEBYTECODE 1
